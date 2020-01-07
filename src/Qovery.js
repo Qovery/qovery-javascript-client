@@ -29,7 +29,7 @@ class Qovery {
             return undefined;
         }
 
-        const jsonStr = atob(b64Json);
+        const jsonStr = Buffer.from(b64Json, 'base64').toString('binary');
         return JSON.parse(jsonStr);
     }
 
