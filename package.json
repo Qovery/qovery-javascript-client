@@ -1,0 +1,29 @@
+{
+  "name": "qovery-client",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test",
+    "build": "npm run build"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "transform": {
+      "\\.js$": "babel-jest"
+    },
+    "testRegex": "(/src/.*\\.spec\\.js)|(/test/.*\\.test\\.js)$"
+  },
+  "keywords": [],
+  "author": "Romaric Philogene <rphilogene@qovery.com> (https://www.qovery.com)",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^13.5.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
